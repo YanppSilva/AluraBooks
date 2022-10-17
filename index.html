@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alura Books</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -47,6 +48,87 @@
         <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
         <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
     </section>
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Novos Lançamentos</h2>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="assets/livros/ApacheKafka.svg" alt="Livro sobre apache kafka e spring boot da alura books"></div>
+                <div class="swiper-slide"><img src="assets/livros/Liderança.svg" alt="Livro sobre liderança em desing da alura books"></div>
+                <div class="swiper-slide"><img src="assets/livros/Javascript.svg" alt="Livro sobre Javascript assertivo da alura books"></div>
+                <div class="swiper-slide"><img src="assets/livros/Guia Front-end.svg" alt="Livro Guia Front-end sobre como se tornar um dev front-end "></div>
+                <div class="swiper-slide"><img src="assets/livros/Portugol.svg" alt="Livro com exercícios sobre a linguagem de programação Portugol"></div>
+                <div class="swiper-slide"><img src="assets/livros/Acessibilidade.svg" alt="Livro sobre boas praticas para construir sites e aplicações web."></div>
+
+                ...
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+        <div class="card">
+            <div class="card__descricao">
+                <div class="descricao">
+                    <h3 class="descricao__titulo">Talvez você também se interesse por...</h3>
+                    <h2 class="descricao__titulo-livro">Angular 11 e Firebase</h2>
+                    <p class="descricao__txt">Construindo uma aplicação integrada com a plataforma do Google.</p>
+                </div>
+                <img src="assets/livros/Angular.svg" alt="Imagem do livro de Angular" class="descricao__img">
+            </div>
+            <div class="card__btn">
+                <ul class="btn">
+                    <li class="btn__item"><img src="assets/Favoritos.svg" alt="Favoritar livro"></li>
+                    <li class="btn__item"><img src="assets/Compras.svg" alt="Adcionar no carrinho de compras"></li>
+                </ul>
+                <a href="#" class="btn__ancora">Saiba mais</a>
+            </div>
+        </div>
+        <h2 class="carrossel__titulo">Mais vendidos</h2>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="assets/livros/ApacheKafka.svg" alt="Livro sobre apache kafka e spring boot da alura books"></div>
+                <div class="swiper-slide"><img src="assets/livros/Liderança.svg" alt="Livro sobre liderança em desing da alura books"></div>
+                <div class="swiper-slide"><img src="assets/livros/Javascript.svg" alt="Livro sobre Javascript assertivo da alura books"></div>
+                <div class="swiper-slide"><img src="assets/livros/Guia Front-end.svg" alt="Livro Guia Front-end sobre como se tornar um dev front-end "></div>
+                <div class="swiper-slide"><img src="assets/livros/Portugol.svg" alt="Livro com exercícios sobre a linguagem de programação Portugol"></div>
+                <div class="swiper-slide"><img src="assets/livros/Acessibilidade.svg" alt="Livro sobre boas praticas para construir sites e aplicações web."></div>
+
+                ...
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+        <div class="card">
+            <div class="card__descricao">
+                <div class="descricao">
+                    <img src="assets/Estrelinhas.svg" alt="Estrelinhas para ilustrar o(a) escritor(ar) do mês" class="estrelas">
+                    <h3 class="descricao__titulo">Autora do Mês</h3>
+                    <h2 class="descricao__titulo-livro">Juliana Agarikov</h2>
+                    <p class="descricao__txt">Analista de sistemas e escritora, Juliana é especialista em Front-end.</p>
+                </div>
+                <img src="assets/Perfil-escritora 1.svg" alt="Imagem da Juliana Agarikov, escritora do mês" class="descricao__img">
+            </div>
+            <div class="card__btn">
+                <ul class="btn">
+                    <li class="btn__item"><img src="assets/Favoritos.svg" alt="Favoritar livro"></li>
+                    <li class="btn__item"><img src="assets/Compras.svg" alt="Adcionar no carrinho de compras"></li>
+                </ul>
+                <a href="#" class="btn__ancora">Saiba mais</a>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="app/app.js"></script>
 </body>
 
 </html>
