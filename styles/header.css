@@ -66,7 +66,12 @@
     display: none;
 }
 
+.container__txt {
+    display: none;
+}
+
 @media screen and (min-width: 1024px) {
+
     .container__titulo,
     .container__titulo--neg {
         font-family: var(--fonte-secundaria);
@@ -114,5 +119,32 @@
 
     .opcoes__btn {
         display: none;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .container__link {
+        display: flex;
+        align-items: center;
+        color: var(--preto-defaut);
+        font-size: 20px;
+        margin-right: 1em;
+        text-decoration: none;
+    }
+
+    .cabecalho {
+        padding: 0 2em
+    }
+
+    .opcoes {
+        margin-right: auto;
+    }
+
+    .container__titulo {
+        margin-right: 1em;
+    }
+
+    .container__txt {
+        display: block;
     }
 }
